@@ -6,31 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Missile optimization software made under the guidance of Technical Program Manager at the U.S. Navy.</p>
-    <img style = "max-width: 500px" src = "../descriptions/images/missile-screenshot.png";>
+    <p>A light weight, simple to use and easily modifiable drawing application.</p>
+    <img style = "max-width: 500px" src = "../descriptions/images/penguin-screenshot.png";>
 
-    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ethan-rogers/portfolio-website" style="font-size: 18px; color: var(--mid-color);">
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ethan-rogers/sketch-application" style="font-size: 18px; color: var(--mid-color);">
         <br>
         <i class="fa-brands fa-github" style="transform: translateY(11%);"></i>
-            <span>missile-booster-code</span>
-        </a>
+        <span>sketch-application</span>
+    </a>
 
     <h4>
         Features
     </h4>
 
     <p> 
-        While a booster stage makes a missile easier to launch, it decreases performance. 
-        Given some parameters, this program optimizes the ideal stage size for a missile with and without the booster stage.
-        The program then shows graph that compares the performance of both optimized missile over their flight. 
+        Most note taking apps are either notebooks with fixed page sizes or whiteboards with one infinite page. 
+        PenGuin however offers a notebook structure where each page can be however large you want. This allows the user to structure there 
+        ideas or problems by page, but also gives any one page however much space the idea requires. 
+        A notebook can be exported to a pdf, where each page is dynamically allocated space based on how the limits of the drawing.
     </p>
 
     <h4>
-        Metheadology
+        Technology Used
     </h4>
 
     <p> 
-        This program calculates 
+        The program itself is coded in Python. This allows almost anyone with a little bit of coding knowledge to add custom features. 
+        While Python is slow, all computationaly expensive processes are done using libraries that were implemented in C.
+        The graphics are done using Pygame, which offers wrapping functions for the SDL library. 
+        All point manipulation is done with Numpy. These dependencies allows PenGuin to be easily modified while also ensuring it has good performance. 
     </p>
     
 

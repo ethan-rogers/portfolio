@@ -7,6 +7,7 @@ export function createProjectList(){
 
     projectTitles.forEach((project, index) => {
         const button = document.createElement('button');
+        
         button.classList.add('projectbutton');
         button.addEventListener('click', (event) => {
             openProject(project.id)
@@ -15,6 +16,7 @@ export function createProjectList(){
         const title = document.createElement('p');
         title.textContent = project.title;
         title.classList.add('projecttitle');
+        title.id = "projectTitle" + project.id;
         button.appendChild(title);
 
         const summary = document.createElement('p');
@@ -177,6 +179,14 @@ async function openProject(id){
     if (response.ok){
         descriptionDiv.innerHTML = await response.text();
     }
+
+    descriptionDiv.scrollTop = 0;
+
+     projectTitles.forEach((project, index) =>{
+        document.getElementById("projectTitle" + project.id).style.textDecoration = "none";
+     });
+
+     document.getElementById("projectTitle" + id).style.textDecoration = "underline";
 
 
 
