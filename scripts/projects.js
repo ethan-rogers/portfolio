@@ -174,7 +174,7 @@ function setDescription(){
 async function openProject(id){
     const data = projectFiles[id];
     const descriptionDiv = document.getElementById("projectDescriptionContent");
-    const response = await fetch("descriptions/format/" + projectFiles[id]);
+    const response = await fetch(projectFiles[id]);
 
     if (response.ok){
         descriptionDiv.innerHTML = await response.text();
