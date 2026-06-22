@@ -1,0 +1,55 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Most household recyclables end up in the landfill because of improper disposal. 
+       This trachcan takes human error out of waste sorting. </p>
+    <img style = "max-width: 500px" src = "descriptions/images/trashcan.png";>
+
+    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=BlKiDKDx3JA" style="font-size: 18px; color: var(--mid-color);">
+        <br>
+        <i class="fa-brands fa-youtube" style="transform: translateY(11%);"></i>
+        
+        <span>Demo Video</span>
+    </a>
+
+
+
+    <h4>
+        Capabilities
+    </h4>
+
+    <p> 
+       Trash Detective is an AI-powered smart trash sorting system with a real-time analytics dashboard. 
+       You drop an item into the sorter, a camera captures it, a computer vision model classifies it into one of four categories (paper/cardboard, metal/glass, plastic, or trash), and a servos routes it to the correct bin. 
+       Every sorted item shows up on a live dashboard within two seconds with the captured image, classification, confidence score, and environmental impact metrics like waste diverted and CO2 saved.
+    </p>
+
+    <img style = "max-width: 500px" src = "descriptions/images/trash-dashboard.png";>
+
+    <h4>
+        Hardware
+    </h4>
+
+    <p> 
+        We used a Raspberry Pi with a camera module and servos motors inside a custom-built sorting enclosure. 
+        Items are staged one at a time in front of the camera so the model can classify them reliably. 
+        For classification, we run OpenAI's CLIP model on a PC server using zero-shot inference with tuned text prompts for each waste category, so we didn't need any custom training data.
+    </p>
+
+    <h4>
+        Acknowledgments
+    </h4>
+
+    <p>
+        This project was made in 24 hours by a team of four. My teammates were Noel Wesen, Nicholas Lyall and Braden Cruz. 
+    </p>
+    
+
+<!DOCTYPE html>
+</body>
+</html>
