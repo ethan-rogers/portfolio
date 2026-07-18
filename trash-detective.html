@@ -7,7 +7,7 @@
 </head>
 <body>
     <p>Most household recyclables end up in the landfill because of improper disposal. 
-       This trachcan takes human error out of waste sorting. Made with three other students for Hoo Hacks 2026.  </p>
+       This trachcan automatically sorts waste using computer vision. Made out of scraps for Hoo Hacks 2026.  </p>
     <img style = "max-width: 500px" src = "descriptions/images/trashcan.png";>
 
     <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=BlKiDKDx3JA" style="font-size: 18px; color: var(--mid-color);">
@@ -24,9 +24,10 @@
     </h4>
 
     <p> 
-       Trash Detective is an AI-powered smart trash sorting system with a real-time analytics dashboard. 
+       Trash Detective is a smart trash sorting system with a real-time analytics dashboard. 
        You drop an item into the sorter, a camera captures it, a computer vision model classifies it into one of four categories (paper/cardboard, metal/glass, plastic, or trash), and a servos routes it to the correct bin. 
-       Every sorted item shows up on a live dashboard within two seconds with the captured image, classification, confidence score, and environmental impact metrics like waste diverted and CO2 saved.
+       Every sorted item shows up on a live dashboard with the captured image, classification, confidence score, and environmental impact metrics. 
+       
     </p>
 
     <img style = "max-width: 500px" src = "descriptions/images/trash-dashboard.png";>
@@ -36,9 +37,9 @@
     </h4>
 
     <p> 
-        We used a Raspberry Pi with a camera module and servos motors inside a custom-built sorting enclosure. 
-        Items are staged one at a time in front of the camera so the model can classify them reliably. 
-        For classification, we run OpenAI's CLIP model on a PC server using zero-shot inference with tuned text prompts for each waste category, so we didn't need any custom training data.
+        We used a Raspberry Pi, a standard webcame and cheap servo motors inside a custom-built sorting enclosure. 
+        The sorting enclosure was made from a plastic storage bin, carboard and zipties.
+        For classification, we run OpenAI's CLIP model on a PC server with tuned text prompts for each waste category, so we didn't need any custom training data.
     </p>
 
     

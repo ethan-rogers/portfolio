@@ -99,12 +99,13 @@ hr{
     margin-left: var(--default-side-marigin);
     margin-right: var(--default-side-marigin);
     margin-top: 100px;
+    font-size: small;
 }
 
 .iconlink{
-    font-size: 48px; 
+    font-size: 36px; 
     color: var(--mid-color); 
-    padding-right: 60px; 
+    padding-right: 40px; 
     text-decoration: none;
 }
 
