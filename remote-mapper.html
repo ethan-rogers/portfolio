@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Map keys from an IR remote to keyboard keys and media controls.</p>
+    <p>Map keys from any IR remote to keyboard keys and media controls. Turn your PC into a smart TV with an old remote. </p>
     <img style = "max-width: 400px"; src = "descriptions/images/ir-prototype.jpg">
     <br>
     <a target="_blank" rel="noopener noreferrer" href="https://github.com/ethan-rogers/universal-receiver" style="font-size: 18px; color: var(--mid-color);">
@@ -20,9 +20,12 @@
     </h4>
 
     <p>
-        The IR receiver uses an Arduino Micro and a KY-022 IR sensor. This can recieve input from any standard IR remote. It then maps this to keyboard keys. 
-        Once mapped, the Arduino Micro acts as a USB device, without requireing the mapping software. 
-        The mapping software generates custom C++ code and uploads it to the device using the Arduino CLI. 
+        The universal receiver is compatible with any standard IR remote. 
+
+        The IR receiver uses an Arduino Micro and a KY-022 IR sensor.
+        The Arduino Micro acts as a USB keyboard, so once it is mapped to a remote it is plug and play with any PC. 
+        The mapping software generates custom C++ code and uploads it to the device using the Arduino CLI.
+
     </p>
 
 
@@ -34,9 +37,9 @@
     </h4>
 
     <p>
-        The software was coded in Python. It uses PyQt6 for the UI. It communicates with the Arduino to display the IR remote codes. 
-        It supports up to eight remote key mappings, each of which can be mapped with up to four computer actions. 
-        Future updates would be to add mouse movement mapping. 
+        The software was coded in Python. It uses PyQt6 for the UI. It communicates with the Arduino to display the IR remote codes. It can also compile and upload the mappings to the device. 
+        It supports up to eight remote key mappings, each of which can be mapped with up to four computer keys or media controls. 
+        
     </p>
 
 
