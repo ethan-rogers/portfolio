@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Development and research for the Spartacus combat robot, preparing to compete in the 
+        <a style = "color: white" target="_blank" rel="noopener noreferrer" href="https://www.rabidrva.com/">RABID</a> 
+        competition early 2027. This summary focuses on my contributions: the electronics and software. </p>
+    <img style = "max-width: 500px" src = "descriptions/images/spartacus-cad.jpg";>
+
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ethan-rogers/spartacus" style="font-size: 18px; color: var(--mid-color);">
+        <br>
+        <i class="fa-brands fa-github" style="transform: translateY(11%);"></i>
+            <span>spartacus</span>
+        </a>
+
+    <h4>
+        Electronics 
+    </h4>
+
+    <p> 
+        Currently the prototype uses an Arduino Nano to recieve remote input and calculate motor control logic. This will be replaced with an STM32 based microcontroller 
+        that is more compact and powerful. The remote control is a DMX5e RC plane controller. While not ideal for combat robotics, I already owned this remote. 
+        DSM2 protocal also automatically scans channels to avoid interference, so it meets the requirements of the competition. 
+        The PWM signals from the reciever are read by the Arduino, which then calculated the motor logic. I am still researching ESCs. 
+        But once the parts are determined and recieved, translating the Arduino logic to STM32 and powering the motors should be relatively simple. 
+
+    </p>
+
+    <img style = "max-width: 500px" src = "descriptions/images/observation-panel.png";>
+
+    <h4>
+        Observation Panel 
+    </h4>
+
+    <p> 
+        The observation panel is vital for visualizing the motor power and calibrating the remote. 
+        Its primary purpose is to validate the control systems before adding the motors. 
+        The software communicates with the microcontroller using a serial communication pipline. 
+        It then visualizes the remote position, drive motor speed and weapon speed it recieved from the microcontroller. 
+        The theoretical speed and turn rate of the robot are also calculated based on the drive motors speed. 
+        Note that these values are purely theoretical and are not being recorded sensors. 
+    </p>
+
+<!DOCTYPE html>
+</body>
+</html>
