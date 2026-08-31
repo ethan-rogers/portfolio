@@ -22,11 +22,11 @@
     </h4>
 
     <p> 
-        Currently the prototype uses an Arduino Nano to recieve remote input and calculate motor control logic. This will be replaced with an STM32 based microcontroller 
-        that is more compact and powerful. The remote control is a DMX5e RC plane controller. While not ideal for combat robotics, I already owned this remote. 
+        The remote circuit and control logic are complete. 
+        The remote control is a DMX5e RC plane controller. While not ideal for combat robotics, I already owned this remote. 
         DSM2 protocal also automatically scans channels to avoid interference, so it meets the requirements of the competition. 
-        The PWM signals from the reciever are read by the Arduino, which then calculated the motor logic. I am still researching ESCs. 
-        But once the parts are determined and recieved, translating the Arduino logic to STM32 and powering the motors should be relatively simple. 
+        The PWM signals from the reciever are read by the microcontroller, which then calculated the motor logic. 
+        Currently waiting on parts and CAD from the mechanical team to fully assemble the robot. After this, the microcontroller needs to be hooked up to speed controllers and the motors.
 
     </p>
 
