@@ -9,6 +9,7 @@ export function createProjectList(){
         const button = document.createElement('button');
         
         button.classList.add('projectbutton');
+        button.style.overflow = 'hidden'
         button.addEventListener('click', (event) => {
             openProject(project.id)
         })
@@ -32,7 +33,9 @@ export function createProjectList(){
     initializeDescription();
 }
 
-const barPercent = 6;
+
+
+let barPercent = 6;
 const interval = 5;
 // 0; list is full, 1; half and half, 2; description is full
 let position = 0;
