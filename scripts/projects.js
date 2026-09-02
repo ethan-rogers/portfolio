@@ -53,8 +53,13 @@ export function leftArrow(){
     let value = 0;
     let goal = 0;
 
-    // if list is full
-    if (position == 0){
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    console.log(width/height);
+
+    // if list is full and we are not on vertical
+    if (position == 0 && height < width){
         // add right button
         const button = document.getElementById("rightlabel");
         button.classList.add('fa-solid', 'fa-caret-right');
@@ -62,11 +67,16 @@ export function leftArrow(){
         goal = 50 - barPercent/2;
         position = 1;
         
-    }else // description is half open
+    }else // description is half open or we are on vertical screen
     {
         // remove left button
         const button = document.getElementById("leftlabel");
         button.classList.remove('fa-solid', 'fa-caret-left');
+
+        if (position == 0){
+            const rightButton = document.getElementById("rightlabel");
+            rightButton.classList.add('fa-solid', 'fa-caret-right');
+        }
 
         goal = 100 - barPercent;
         value = 50 - barPercent/2;
@@ -98,13 +108,14 @@ export function rightArrow(){
     const projectList = document.getElementById("projectList");
     const projectDescription = document.getElementById("projectDescription");
 
-
+    const width = window.innerWidth;
+    const height = window.innerHeight;
 
     let value = 0;
     let goal = 0;
 
-    // if project list is closed
-    if (position == 2){
+    // if project list is closed and we are not in vertical
+    if (position == 2 && width > height){
         // add left button back
         const button = document.getElementById("leftlabel");
         button.classList.add('fa-solid', 'fa-caret-left');
