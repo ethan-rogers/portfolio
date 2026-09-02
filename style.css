@@ -44,11 +44,12 @@ hr{
 }
 
 .navbar{
-    
+    margin: 0;
     position: fixed;
     height: 60px; 
     width: 100%;
     top: 0px;
+    left: 0px;
 
 
     
